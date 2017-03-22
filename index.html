@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<!-- 预加载 -->
+	<div id="mask">
+		<div id="loading"></div>
+	</div>
+	<!-- 内容 -->
+	<div id="wrap">
+		
+		<!-- 开始界面 -->
+		<div id="startWrap">
+			<!-- 底部 -->
+			<div id="startFooter">
+				<!-- 开始按钮 -->
+				<img id="startBtn" src="img/start.png">
+				<!-- 活动规则打开按钮 -->
+				<p id="ruleBtn">>活动规则<</p>
+			</div>
+		</div>
+
+		<!-- 活动规则 -->
+		<div id="ruleWrap">
+			<!-- 关闭按钮 -->
+			<div id="closeBtn"></div>
+		</div>
+
+		<!-- 游戏内容 -->
+		<div id="draw">
+			<!-- 游戏时间 -->
+			<div id="head_time">
+				<div id="countdown">
+					<img src="img/countdown.png">
+				</div>
+				<div id="percent">100%</div>
+				<div id="startNum"></div>
+				<div id="endNum">0</div>		
+			</div>
+			<!-- 游戏图片 -->
+			<ul id="drawCon">
+				
+			</ul>
+			<!-- 抽奖次数 -->
+			<div id="draw_footer">
+				<p>您的抽奖次数：<span id="lottery">0</span>次</p>
+			</div>
+		</div>
+
+		<!-- 第一关 -->
+		<div id="first" class="levels">
+			<img src="img/first.png">
+		</div>
+		<!-- 第二关 -->
+		<div id="second" class="levels">
+			<img src="img/second.png">
+		</div>
+		<!-- 第三关 -->
+		<div id="third" class="levels">
+			<img src="img/third.png">
+		</div>
+
+		<!-- 挑战失败 -->
+		<div id="lose" class="result">
+			<div class="resultMask"></div>
+			<img src="img/lose.png">
+		</div>
+		<!-- 挑战下一关 -->
+		<div id="next" class="result">
+			<div class="resultMask"></div>
+			<img src="img/next.png">
+		</div>
+		<!-- 挑战成功 -->
+		<div id="pass">
+			<div id="sec"></div>
+			<div id="again"></div>
+			<div id="lotteryBtn"></div>
+		</div>	
+		<!-- 抽奖 -->
+		<div id="lotteryWrap">
+			<div id="lotteryBg"></div>
+			<img id="lotteryImg" src="img/lottery.png">
+			<p>剩余次数：<span id="lotteryNum">3</span></p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>

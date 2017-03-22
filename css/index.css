@@ -1,0 +1,281 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body,body>div,#wrap>div{
+	width: 100%;
+	height: 100%;
+	font-family: "微软雅黑";
+}
+ul{
+	list-style: none;
+}
+
+/* ------------loading页面----------- */
+#mask{
+	display: none;
+}
+
+/* -------------最外层-------------- */
+#wrap{
+	position: relative;
+	overflow: hidden;
+}
+#wrap>div{
+	position: absolute;
+}
+
+/* -------------开始界面------------- */
+#startWrap{
+	background: url("../img/bg.png");
+	background-size: 100% 100%;	
+}
+/* 开始界面底部 */
+#startFooter{
+	width: 100%;
+	height: 33%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+/* 游戏开始按钮 */
+#startBtn{
+	width: 30%;
+	height: 20%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 22%;
+	margin: auto;
+}
+/* 活动规则打开按钮 */
+#ruleBtn{
+	font-family: "微软雅黑";
+	font-size: 1em;
+	text-align: center;
+	color: #808084;
+	position: relative;
+	left: 0;
+	top: 48%;
+}
+/* -------------开始界面END------------- */
+
+/* ------------- 关卡开始界面--------------*/
+.levels{
+	top:-100%;
+	background:url("../img/levelsBg.jpg");
+	background-size: 100% 100%;
+}
+.levels>img{
+	width: 50%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+/* ------------- 关卡开始界面END--------------*/
+
+/* --------------挑战结果界面-------------------*/
+.result{
+	display: none;
+}
+.resultMask{
+	background-color: black;
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.result>img{
+	width: 50%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+#pass{
+	background: url("../img/pass.png");
+	background-size: 100% 100%;	
+	display: none;
+}
+#sec{
+	width: 12%;
+	text-align: center;
+	position: absolute;
+	left: 44%;
+	top: 28%;
+	color: red;
+	font-size: 2em;
+}
+#again{
+	width: 32%;
+	height: 6%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 62%;
+	margin: auto;
+}
+#lotteryBtn{
+	width: 32%;
+	height: 6%;
+	position: absolute;
+	left: 12%;
+	top: 51%;
+}
+
+#lotteryWrap{
+	left: -100%;
+}
+#lotteryBg{
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.5;
+}
+#lotteryImg{
+	width: 70%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 32%;
+	margin: auto;
+}
+#lotteryWrap p{
+	width: 100%;
+	font-size: 2em;
+	color: white;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: 20%;	
+}
+
+/* --------------挑战结果界面END-------------------*/
+
+/* -------------活动规则页面------------- */
+#ruleWrap{
+	background: url("../img/rule.png");
+	background-size: 100% 100%;	
+}
+/* 关闭按钮 */
+#closeBtn{
+	width: 7%;
+	height: 4%;
+	position: absolute;
+	top: 6.5%;
+	right: 9%;
+}
+/* -------------活动规则页面END------------- */
+
+/* --------------游戏内容------------------*/
+#draw{
+	background: url("../img/draw_bg.png");	
+	background-size: 100% 100%;	
+	display: none;
+}
+/* 游戏时间 */
+#head_time{
+	background: url("../img/head_time.png");	
+	background-size: 100% 100%;	
+	width: 100%;
+	height: 5%;
+	position: absolute;
+	top: 5%;
+}
+#countdown{
+	width: 78%;
+	height: 48%;
+	border-radius: 30px;
+	position: absolute;
+	left: 11%;
+	top: 2%;
+	overflow: hidden;
+}
+#countdown>img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#percent{
+	width: 8%;
+	text-align: center;
+	position: absolute;
+	left: 71%;
+	bottom: -1%;
+	color: white;
+	font-size: 1em;
+}
+#startNum{
+	width: 4%;
+	text-align: center;
+	position: absolute;
+	right: 4.5%;
+	top: 1%;
+	color: black;
+	font-size: 1em;
+}
+#endNum{
+	position: absolute;
+	left: 5%;
+	top: 1%;
+	color: black;
+	font-size: 1em;
+}
+/* 抽奖次数 */
+#draw_footer{
+	background: url("../img/draw_footer.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 5%;
+	position: absolute;
+	left: 0;
+	bottom: 5%;
+}
+#draw_footer p{
+	color: white;
+	font-size: 1.5em;
+	text-align: center;
+}
+/* 游戏图片 */
+#drawCon{
+	width: 80%;
+	height: 70%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	-webkit-transform-style: preserve-3d;
+}
+#drawCon li{
+	float: left;
+	position: relative;
+}
+#drawCon li>img{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#drawCon li>img:nth-child(1){
+	transition: 1s;
+	-webkit-transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+#drawCon li>img:nth-child(2){
+	transition: 1s;
+	-webkit-transform: rotateY(0deg);
+	backface-visibility: hidden;
+}
