@@ -1,4 +1,13 @@
+// ----------------预加载------------------
+	
+	var $mask = $("#mask");
+	var $wrap = $("#wrap");
 
+	window.onload = function () {	
+		$mask.hide();
+		$wrap.show();	
+	}
+	
 // --------------活动规则界面交互-------------
 
 var $closeBtn = $("#closeBtn");
