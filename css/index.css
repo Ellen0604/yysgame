@@ -178,6 +178,7 @@ ul{
 #ruleWrap{
 	background: url("../img/rule.png");
 	background-size: 100% 100%;	
+	display: none;
 }
 /* 关闭按钮 */
 #closeBtn{
